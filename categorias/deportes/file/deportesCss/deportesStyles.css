@@ -12,7 +12,12 @@ body {
     margin: 0;
     background-color: #365486;
 }
- 
+main {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /*---------------------MAIN---------------------*/
 
 main {
@@ -69,7 +74,7 @@ header{
 
 
 
-/*--------------------SECTION--------------------*/
+/*--------------------SECTION   1--------------------*/
 
 .section1 {
     margin-top: 60px;
@@ -102,12 +107,20 @@ header{
     align-items: center;
 }
 .imgs1 img {
-    width: 100%;
+    margin: auto;
+    width: 95%;
     border-radius: 8px;
 }
 .foto {
+    margin-bottom: 5px;
+    border-radius: 8px;
+    background-color: white;
     width: 18%;
+    min-height: 87px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .foto2:hover ~ .mainImg1{
     background-image: url(../../../../images/deportes/balon/balon2.png);
@@ -116,7 +129,7 @@ header{
     background-image: url(../../../../images/deportes/balon/balon3.png);
 }
 .mainImg1 {
-    width: 75%;
+    width: 76%;
     height: 370px;
     background-image: url(../../../../images/deportes/balon/balon1.png);
     background-size: 100%;
@@ -218,4 +231,283 @@ input {
 .buy:hover {
     background-color: #709053;
 }
-/*--------------------SECTION--------------------*/
+#check__buy:checked ~ .producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.producto {
+    position: absolute;
+    top: 100px;
+    right: 30%;
+    width: 40%;
+    height: 700px;
+    background-color: #363062;
+    border-radius: 10px;
+    display: none;
+}
+.content__imagen {
+    margin-top: 60px;
+    width: 83%;
+    height: 47%;
+    border-radius: 10px;
+    background-image: url(../../../../images/deportes/balon/balon1.png);
+    background-size: 62%;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
+.content__texto{
+    width: 83%;
+}
+.content__texto h1{
+    margin: 15px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: white;
+}
+.content__texto h2 {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    color: white;
+}
+.buy_ {
+    margin-left: 200px;
+}
+.content__texto p {
+    margin: 12px;
+}
+.estrellas_ {
+    margin: 0;
+    width: 39%;
+    height: 38px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.estrella_ {
+    margin: 0 5px;
+    width: 40px;
+    height: 100%;
+    background-image: url(../../../../images/estrellaBorde.png);
+    background-size: 100%;
+    cursor: pointer;
+}
+#input_1:checked ~ .cont1 .label_1 .estrella_1,
+.cont1:hover .estrella_1{
+    background-image: url(../../../../images/estrella.png);
+}
+#input_2:checked ~ .cont2 .label_2 .estrella_2,
+#input_2:checked ~ .cont1 .label_1 .estrella_1,
+.cont2:hover ~ .cont1 .label_1 .estrella_1,
+.cont2:hover .estrella_2{
+    background-image: url(../../../../images/estrella.png);
+}
+#input_3:checked ~ .cont3 .label_3 .estrella_3,
+#input_3:checked ~ .cont2 .label_2 .estrella_2,
+#input_3:checked ~ .cont1 .label_1 .estrella_1,
+.cont3:hover ~ .cont2 .label_2 .estrella_2,
+.cont3:hover ~ .cont1 .label_1 .estrella_1,
+.cont3:hover .estrella_3{
+    background-image: url(../../../../images/estrella.png);
+}
+#input_4:checked ~ .cont4 .label_4 .estrella_4,
+#input_4:checked ~ .cont3 .label_3 .estrella_3,
+#input_4:checked ~ .cont2 .label_2 .estrella_2,
+#input_4:checked ~ .cont1 .label_1 .estrella_1,
+.cont4:hover ~ .cont3 .label_3 .estrella_3,
+.cont4:hover ~ .cont2 .label_2 .estrella_2,
+.cont4:hover ~ .cont1 .label_1 .estrella_1,
+.cont4:hover .estrella_4{
+    background-image: url(../../../../images/estrella.png);
+}
+#input_5:checked ~ .cont5 .label_5 .estrella_5,
+#input_5:checked ~ .cont4 .label_4 .estrella_4,
+#input_5:checked ~ .cont3 .label_3 .estrella_3,
+#input_5:checked ~ .cont2 .label_2 .estrella_2,
+#input_5:checked ~ .cont1 .label_1 .estrella_1,
+.cont5:hover ~ .cont4 .label_4 .estrella_4,
+.cont5:hover ~ .cont3 .label_3 .estrella_3,
+.cont5:hover ~ .cont2 .label_2 .estrella_2,
+.cont5:hover ~ .cont1 .label_1 .estrella_1,
+.cont5:hover .estrella_5{
+    background-image: url(../../../../images/estrella.png);
+}
+/*--------------------SECTION   1--------------------*/
+
+
+
+/*--------------------SECTION   2--------------------*/
+
+.mainImg2 {
+    width: 76%;
+    height: 370px;
+    background-color: white;
+    background-image: url(../../../../images/deportes/pelotas/pelotas1.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    align-self: center;
+}
+
+.foto5:hover ~ .mainImg2{
+    background-image: url(../../../../images/deportes/pelotas/pelotas2.png);
+}
+.foto6:hover ~ .mainImg2{
+    background-image: url(../../../../images/deportes/pelotas/pelotas3.png);
+}
+
+#input6:checked ~ .cont1 .label1 .estrella1{
+    background-image: url(../../../../images/estrella.png);
+}
+#input7:checked ~ .cont2 .label2 .estrella2,
+#input7:checked ~ .cont1 .label1 .estrella1{
+    background-image: url(../../../../images/estrella.png);
+}
+#input8:checked ~ .cont3 .label3 .estrella3,
+#input8:checked ~ .cont2 .label2 .estrella2,
+#input8:checked ~ .cont1 .label1 .estrella1{
+    background-image: url(../../../../images/estrella.png);
+}
+#input9:checked ~ .cont4 .label4 .estrella4,
+#input9:checked ~ .cont3 .label3 .estrella3,
+#input9:checked ~ .cont2 .label2 .estrella2,
+#input9:checked ~ .cont1 .label1 .estrella1{
+    background-image: url(../../../../images/estrella.png);
+}
+#input10:checked ~ .cont5 .label5 .estrella5,
+#input10:checked ~ .cont4 .label4 .estrella4,
+#input10:checked ~ .cont3 .label3 .estrella3,
+#input10:checked ~ .cont2 .label2 .estrella2,
+#input10:checked ~ .cont1 .label1 .estrella1{
+    background-image: url(../../../../images/estrella.png);
+}
+
+/*--------------------SECTION   2--------------------*/
+
+
+/*--------------------SECTION   3--------------------*/
+
+.foto8:hover ~ .mainImg3{
+    background-image: url(../../../../images/deportes/mesa/mesa2.png);
+}
+.foto9:hover ~ .mainImg3{
+    background-image: url(../../../../images/deportes/mesa/mesa3.png);
+}
+
+.mainImg3 {
+    width: 76%;
+    height: 370px;
+    background-color: white;
+    background-image: url(../../../../images/deportes/mesa/mesa1.png);
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    align-self: center;
+}
+
+#input11:checked ~ .cont1 .label1 .estrella1{
+    background-image: url(../../../../images/estrella.png);
+}
+#input12:checked ~ .cont2 .label2 .estrella2,
+#input12:checked ~ .cont1 .label1 .estrella1{
+    background-image: url(../../../../images/estrella.png);
+}
+#input13:checked ~ .cont3 .label3 .estrella3,
+#input13:checked ~ .cont2 .label2 .estrella2,
+#input13:checked ~ .cont1 .label1 .estrella1{
+    background-image: url(../../../../images/estrella.png);
+}
+#input14:checked ~ .cont4 .label4 .estrella4,
+#input14:checked ~ .cont3 .label3 .estrella3,
+#input14:checked ~ .cont2 .label2 .estrella2,
+#input14:checked ~ .cont1 .label1 .estrella1{
+    background-image: url(../../../../images/estrella.png);
+}
+#input15:checked ~ .cont5 .label5 .estrella5,
+#input15:checked ~ .cont4 .label4 .estrella4,
+#input15:checked ~ .cont3 .label3 .estrella3,
+#input15:checked ~ .cont2 .label2 .estrella2,
+#input15:checked ~ .cont1 .label1 .estrella1{
+    background-image: url(../../../../images/estrella.png);
+}
+
+/*--------------------SECTION   3--------------------*/
+
+
+/*--------------------SECTION   4--------------------*/
+
+.foto11:hover ~ .mainImg4{
+    background-image: url(../../../../images/deportes/mancuernas/mancuerna2.png);
+}
+.foto12:hover ~ .mainImg4{
+    background-image: url(../../../../images/deportes/mancuernas/mancuerna3.png);
+}
+
+.mainImg4 {
+    width: 76%;
+    height: 370px;
+    background-color: white;
+    background-image: url(../../../../images/deportes/mancuernas/mancuerna1.png);
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    align-self: center;
+}
+
+#input16:checked ~ .cont1 .label1 .estrella1{
+    background-image: url(../../../../images/estrella.png);
+}
+#input17:checked ~ .cont2 .label2 .estrella2,
+#input17:checked ~ .cont1 .label1 .estrella1{
+    background-image: url(../../../../images/estrella.png);
+}
+#input18:checked ~ .cont3 .label3 .estrella3,
+#input18:checked ~ .cont2 .label2 .estrella2,
+#input18:checked ~ .cont1 .label1 .estrella1{
+    background-image: url(../../../../images/estrella.png);
+}
+#input19:checked ~ .cont4 .label4 .estrella4,
+#input19:checked ~ .cont3 .label3 .estrella3,
+#input19:checked ~ .cont2 .label2 .estrella2,
+#input19:checked ~ .cont1 .label1 .estrella1{
+    background-image: url(../../../../images/estrella.png);
+}
+#input20:checked ~ .cont5 .label5 .estrella5,
+#input20:checked ~ .cont4 .label4 .estrella4,
+#input20:checked ~ .cont3 .label3 .estrella3,
+#input20:checked ~ .cont2 .label2 .estrella2,
+#input20:checked ~ .cont1 .label1 .estrella1{
+    background-image: url(../../../../images/estrella.png);
+}
+
+
+/*--------------------SECTION   4--------------------*/
+
+/*-----------------------FOOTER-----------------------*/
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+}
+.footerTitle {
+    font-size: 18px;
+}
+.menuLinks{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.menuLinks a:hover{
+    text-decoration: underline;
+}
+.icon {
+    width: 30px;
+}
+
+/*-----------------------FOOTER-----------------------*/
