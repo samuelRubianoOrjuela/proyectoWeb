@@ -12,6 +12,9 @@ body {
     margin: 0;
     background-color: #365486;
 }
+input {
+    display: none;
+}
 /*    HEAD    */
 
 header{
@@ -71,11 +74,11 @@ header{
     height: 0;
     top: 54px;
     overflow: hidden;
-    z-index: 1;
     display: flex;
     flex-direction: column;
     background-color: #363062;
     transition: 0.2s ease;
+    z-index: 2;
 }
 .menuCatalogo a {
     margin: 11px 0;
@@ -87,13 +90,14 @@ header{
     box-shadow: 0 1px 8px 0px black;
     height: 207px;
     top: 67px;
-    z-index: 1;
+    z-index: 2;
 }
 /*    HEAD    */
 
 /*    MAIN    */
 
 main {
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,37 +107,79 @@ main {
 
 /*    SECTION 1     */
 
-.section1 {
-    margin: 6vw 0 3vw;
-    min-width: 440px;
-    width: 45vw;
-    min-height: 221px;
-    height: 20vw;
-    display: flex;
-    justify-content: center;
-}
-.section1 div {
-    width: 95%;
+.section1{
+    margin: 86px 0 45px;
+    width: 653.25px;
+    height: 370px;
     border-radius: 20px;
+    background-color: #363062;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.15s ease;
+}
+.contMainImg {
+    margin: 25px 0;
+    width: 90%;
+    height: 320px;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    border-radius: 10px;
+    z-index: 1;
+}
+.contMainImg a {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/zapatos/stanSmith/stanSmith1.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    transition: 0.15s ease;
+}
+.section1:hover .contMainImg a {
+    background-size: 95%;
+}
+.section1:hover{
+    padding-bottom: 60px;
+    margin-bottom: -15px;
+}
+.section1:hover .info{
+    top: 523px;
+    visibility: visible;
+}
+.info {
+    position: absolute;
+    top: 473px;
+    margin: 20px 50px;
+    width: 36%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    visibility: hidden;
+    transition: 0.15s ease;
+}
+.nombre{
+    margin: 0;
+    font-size: 30px;
+}
+.boton  {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #71A95A;
     cursor: pointer;
 }
-.adidas1 {
-    width: 85%;
-    transition: 0.3s ease;
-}
-.section1 div:hover .adidas1 {
-    width: 90%;
+.boton:hover{
+    background-color: #709053;
 }
 /*    SECTION 1     */
 
 /*    SECTION 2    */
 
 .section2 {
-    width: 90%;
+    width: 1367.28px;
     margin-top: 4vw;
     margin-bottom: 6vw;
     display: flex;
@@ -141,41 +187,67 @@ main {
 }
 .section2__item {
     margin: 0 20px;
-    padding: 20px 0;
     border-radius: 15px;
-    min-width: 200px;
-    width: 18vw;
-    min-height: 130px;
-    height: 10vw;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 276.475px;
+    height: 183px;
+    background-color: #363062;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.15s ease;
 }
 
-.section2__item:hover .pc1{
-    width: 95%;
-}
-.section2__item:hover .pelotas1{
-    width: 65%;
-}
-.section2__item:hover .pou1{
-    width: 45%;
-}
-
-.pc1 {
+.miniImg {
     width: 90%;
-    transition: 0.3s ease;
+    height: 85%;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.15s ease;
+    border-radius: 5px;
+    z-index: 1;
 }
-.pelotas1 {
-    width: 60%;
-    transition: 0.3s ease;
+.miniBoton {
+    position: absolute;
+    top: 787px;
+    transition: 0.15s ease;
+    visibility: hidden;
 }
-.pou1 {
-    width: 40%;
-    transition: 0.3s ease;
+.miniImg1 {
+    background-image: url(../images/tecnologia/pc/pc1.png);
+    background-size: 78%;
 }
+.section2__item:hover .miniImg1 {
+    background-size: 83%;
+}
+.section2__item:hover {
+    padding-bottom: 40px;
+    margin-bottom: -40px;
+}
+.section2__item:hover .miniBoton{
+    top: 830px;
+    visibility: visible;
+}
+
+.miniImg2 {
+    background-image: url(../images/deportes/pelotas/pelotas1.png);
+    background-size: 57%;
+}
+.section2__item:hover .miniImg2 {
+    background-size: 62%;
+}
+
+.miniImg3 {
+    background-image: url(../images/juguetes/pou/pou1.png);
+    background-size: 41%;
+}
+.section2__item:hover .miniImg3 {
+    background-size: 46%;
+}
+
+
 /*    SECTION 2    */
 
 /*    FOOTER    */

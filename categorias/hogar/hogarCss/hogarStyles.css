@@ -164,13 +164,13 @@ header{
 }
 #input1:checked ~ .cont1 .label1 .estrella1,
 .cont1:hover .estrella1{
-    background-image: url(../../../../images/estrella.png);
+    background-image: url(../../../images/estrella.png);
 }
 #input2:checked ~ .cont2 .label2 .estrella2,
 #input2:checked ~ .cont1 .label1 .estrella1,
 .cont2:hover ~ .cont1 .label1 .estrella1,
 .cont2:hover .estrella2{
-    background-image: url(../../../../images/estrella.png);
+    background-image: url(../../../images/estrella.png);
 }
 #input3:checked ~ .cont3 .label3 .estrella3,
 #input3:checked ~ .cont2 .label2 .estrella2,
@@ -178,7 +178,7 @@ header{
 .cont3:hover ~ .cont2 .label2 .estrella2,
 .cont3:hover ~ .cont1 .label1 .estrella1,
 .cont3:hover .estrella3{
-    background-image: url(../../../../images/estrella.png);
+    background-image: url(../../../images/estrella.png);
 }
 #input4:checked ~ .cont4 .label4 .estrella4,
 #input4:checked ~ .cont3 .label3 .estrella3,
@@ -188,7 +188,7 @@ header{
 .cont4:hover ~ .cont2 .label2 .estrella2,
 .cont4:hover ~ .cont1 .label1 .estrella1,
 .cont4:hover .estrella4{
-    background-image: url(../../../../images/estrella.png);
+    background-image: url(../../../images/estrella.png);
 }
 #input5:checked ~ .cont5 .label5 .estrella5,
 #input5:checked ~ .cont4 .label4 .estrella4,
@@ -200,7 +200,7 @@ header{
 .cont5:hover ~ .cont2 .label2 .estrella2,
 .cont5:hover ~ .cont1 .label1 .estrella1,
 .cont5:hover .estrella5{
-    background-image: url(../../../../images/estrella.png);
+    background-image: url(../../../images/estrella.png);
 }
 
 .section__text h2 {
