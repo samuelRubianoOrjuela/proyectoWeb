@@ -9,7 +9,9 @@ a {
     text-decoration: none;
 }
 body {
+    width: 100%;
     margin: 0;
+    overflow-x: hidden;
     background-color: #365486;
 }
 main {
@@ -17,18 +19,11 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 input {
     display: none;
 }
-/*---------------------MAIN---------------------*/
-
-main {
-    display: flex;
-    justify-content: center;
-}
-
-/*---------------------MAIN---------------------*/
 
 /*--------------------HEADER--------------------*/
 

@@ -81,14 +81,12 @@ label {
 .nav__link:hover{
     box-shadow: 0 1px 8px 0px black;
 }
-.item {
-    display: flex;
-}
-.item2 {
-    width: 144.825px;
-}
 .nav__link2 {
     width: 129px;
+}
+.item1 {
+    display: flex;
+    justify-content: center;
 }
 .menuCatalogo {
     position: absolute;
@@ -113,14 +111,12 @@ label {
     box-shadow: 0 1px 8px 0px black;
     height: 207px;
     top: 67px;
-    z-index: 2;
 }
 /*    HEAD    */
 
 /*    MAIN    */
 
 main {
-    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -304,6 +300,7 @@ footer {
 }
 /*    FOOTER    */
 
+
 @media screen and (max-width: 800px) {
     /*    HEAD    */
     .header__section {
@@ -370,7 +367,5 @@ footer {
         margin: 10vw 0 7vw;
         width: 80vw;
         height: 49vw;
-    }
-
-    
+    }   
 }
