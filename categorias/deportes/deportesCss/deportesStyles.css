@@ -1,0 +1,719 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
+* {
+    margin-left: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    background-color: #365486;
+}
+main {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+    display: none;
+}
+/*---------------------MAIN---------------------*/
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+/*---------------------MAIN---------------------*/
+
+/*--------------------HEADER--------------------*/
+
+header{
+    padding: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #363062;
+}
+.header__section {
+    margin: 0 auto;
+    display: flex;
+    gap: 15vw;
+}
+.logo {
+    display: flex;
+}
+.p1 {
+    margin: 10px 0 10px 20px;
+    font-size: 25px;
+    font-family: 'Press Start 2P', system-ui;
+}
+.p2{
+    margin: 10px 0;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+.nav {
+    display: flex;
+    align-items: center;
+}
+.nav a {
+    margin: 0 8px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 0.1s ease;
+}
+.nav a:hover{
+    box-shadow: 0 1px 8px 0px black;
+}
+
+/*--------------------HEADER--------------------*/
+
+
+
+/*--------------------SECTION--------------------*/
+
+.section {
+    margin-top: 60px;
+    padding: 0 40px;
+    background-color: #363062;
+    border-radius: 10px;
+    width: 75%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section__content {
+    width: 98%;
+    height: 86%;
+    background-color: #B9B4C7;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 8px;
+}
+.imgs{
+    width: 44%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+.imgs img {
+    margin: auto;
+    width: 95%;
+    border-radius: 8px;
+}
+.foto {
+    margin-bottom: 5px;
+    border-radius: 8px;
+    background-color: white;
+    width: 18%;
+    min-height: 87px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainImg {
+    width: 76%;
+    height: 370px;
+    background-color: white;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    align-self: center;
+}
+.section__text {
+    background-color: white;
+    width: 46%;
+    height: 400px;
+    border-radius: 20px;
+}
+.section__text h1 {
+    margin: 31px 34px 20px;
+    font-size: 40px;
+    color: black;
+}
+.estrellas {
+    margin: 18px;
+    width: 39%;
+    height: 38px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.estrella {
+    margin: 0 5px;
+    width: 40px;
+    height: 100%;
+    background-image: url(../../../images/estrellaBorde.png);
+    background-size: 100%;
+    cursor: pointer;
+}
+#input1:checked ~ .cont1 .label1 .estrella1,
+.cont1:hover .estrella1{
+    background-image: url(../../../../images/estrella.png);
+}
+#input2:checked ~ .cont2 .label2 .estrella2,
+#input2:checked ~ .cont1 .label1 .estrella1,
+.cont2:hover ~ .cont1 .label1 .estrella1,
+.cont2:hover .estrella2{
+    background-image: url(../../../../images/estrella.png);
+}
+#input3:checked ~ .cont3 .label3 .estrella3,
+#input3:checked ~ .cont2 .label2 .estrella2,
+#input3:checked ~ .cont1 .label1 .estrella1,
+.cont3:hover ~ .cont2 .label2 .estrella2,
+.cont3:hover ~ .cont1 .label1 .estrella1,
+.cont3:hover .estrella3{
+    background-image: url(../../../../images/estrella.png);
+}
+#input4:checked ~ .cont4 .label4 .estrella4,
+#input4:checked ~ .cont3 .label3 .estrella3,
+#input4:checked ~ .cont2 .label2 .estrella2,
+#input4:checked ~ .cont1 .label1 .estrella1,
+.cont4:hover ~ .cont3 .label3 .estrella3,
+.cont4:hover ~ .cont2 .label2 .estrella2,
+.cont4:hover ~ .cont1 .label1 .estrella1,
+.cont4:hover .estrella4{
+    background-image: url(../../../../images/estrella.png);
+}
+#input5:checked ~ .cont5 .label5 .estrella5,
+#input5:checked ~ .cont4 .label4 .estrella4,
+#input5:checked ~ .cont3 .label3 .estrella3,
+#input5:checked ~ .cont2 .label2 .estrella2,
+#input5:checked ~ .cont1 .label1 .estrella1,
+.cont5:hover ~ .cont4 .label4 .estrella4,
+.cont5:hover ~ .cont3 .label3 .estrella3,
+.cont5:hover ~ .cont2 .label2 .estrella2,
+.cont5:hover ~ .cont1 .label1 .estrella1,
+.cont5:hover .estrella5{
+    background-image: url(../../../../images/estrella.png);
+}
+
+.section__text h2 {
+    margin: 20px 40px 15px;
+    color: black;
+}
+.info {
+    margin: 0 30px;
+    margin-bottom: 0;
+    color: black;
+}
+
+.buy {
+    width: 77px;
+    margin: 16px 34px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #71A95A;
+    cursor: pointer;
+}
+.buy:hover {
+    background-color: #709053;
+}
+
+.fondoProducto{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    pointer-events: all;
+    transition: 0.1s linear;
+    opacity: 0;
+    visibility: hidden;
+}
+.producto {
+    position: fixed;
+    top: 2%;
+    right: 30%;
+    width: 40%;
+    height: 700px;
+    background-color: #363062;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+}
+
+.bx{
+    position: absolute;
+    font-size: 40px;
+    top: 1.5%;
+    right: 2%;
+    cursor: pointer;
+}
+.content__imagen {
+    margin-top: 60px;
+    width: 83%;
+    height: 47%;
+    border-radius: 10px;
+    background-size: 62%;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
+.content__texto{
+    width: 83%;
+}
+.content__texto h1{
+    margin: 15px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: white;
+}
+.content__texto h2 {
+    margin: 15px 15px;
+    color: white;
+}
+.buy_ {
+    position: absolute;
+    margin: 16px 34px;
+    padding: 5px;
+    width: 115px;
+    font-size: 24px;
+    top: 407px;
+    right: 60px;
+    border-radius: 3px;
+    background-color: #71A95A;
+    cursor: pointer;
+}
+.content__texto p {
+    margin: 6px 12px;
+}
+.estrellas_ {
+    margin: 0;
+    width: 39%;
+    height: 38px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.estrella_ {
+    margin: 0 5px;
+    width: 40px;
+    height: 100%;
+    background-image: url(../../../images/estrellaBorde.png);
+    background-size: 100%;
+    cursor: pointer;
+}
+#input_1:checked ~ .cont1 .label_1 .estrella_1,
+.cont1:hover .estrella_1{
+    background-image: url(../../../images/estrella.png);
+}
+#input_2:checked ~ .cont2 .label_2 .estrella_2,
+#input_2:checked ~ .cont1 .label_1 .estrella_1,
+.cont2:hover ~ .cont1 .label_1 .estrella_1,
+.cont2:hover .estrella_2{
+    background-image: url(../../../images/estrella.png);
+}
+#input_3:checked ~ .cont3 .label_3 .estrella_3,
+#input_3:checked ~ .cont2 .label_2 .estrella_2,
+#input_3:checked ~ .cont1 .label_1 .estrella_1,
+.cont3:hover ~ .cont2 .label_2 .estrella_2,
+.cont3:hover ~ .cont1 .label_1 .estrella_1,
+.cont3:hover .estrella_3{
+    background-image: url(../../../images/estrella.png);
+}
+#input_4:checked ~ .cont4 .label_4 .estrella_4,
+#input_4:checked ~ .cont3 .label_3 .estrella_3,
+#input_4:checked ~ .cont2 .label_2 .estrella_2,
+#input_4:checked ~ .cont1 .label_1 .estrella_1,
+.cont4:hover ~ .cont3 .label_3 .estrella_3,
+.cont4:hover ~ .cont2 .label_2 .estrella_2,
+.cont4:hover ~ .cont1 .label_1 .estrella_1,
+.cont4:hover .estrella_4{
+    background-image: url(../../../images/estrella.png);
+}
+#input_5:checked ~ .cont5 .label_5 .estrella_5,
+#input_5:checked ~ .cont4 .label_4 .estrella_4,
+#input_5:checked ~ .cont3 .label_3 .estrella_3,
+#input_5:checked ~ .cont2 .label_2 .estrella_2,
+#input_5:checked ~ .cont1 .label_1 .estrella_1,
+.cont5:hover ~ .cont4 .label_4 .estrella_4,
+.cont5:hover ~ .cont3 .label_3 .estrella_3,
+.cont5:hover ~ .cont2 .label_2 .estrella_2,
+.cont5:hover ~ .cont1 .label_1 .estrella_1,
+.cont5:hover .estrella_5{
+    background-image: url(../../../images/estrella.png);
+}
+/*--------------------SECTION--------------------*/
+
+
+/*--------------------SECTION   1--------------------*/
+
+.foto1_2:hover ~ .mainImg1{
+    background-image: url(../../../images/deportes/balon/balon2.png);
+}
+.foto1_3:hover ~ .mainImg1{
+    background-image: url(../../../images/deportes/balon/balon3.png);
+}
+
+.mainImg1 {
+    background-image: url(../../../images/deportes/balon/balon1.png);
+}
+#check__buy1:checked ~ .fondo1{
+    opacity: 1;
+    visibility: visible;
+}
+.content__imagen1{
+    background-image: url(../../../images/deportes/balon/balon1.png);
+}
+
+/*--------------------SECTION   1--------------------*/
+
+
+/*--------------------SECTION   2--------------------*/
+
+.foto2_2:hover ~ .mainImg2{
+    background-image: url(../../../images/deportes/pelotas/pelotas2.png);
+}
+.foto2_3:hover ~ .mainImg2{
+    background-image: url(../../../images/deportes/pelotas/pelotas3.png);
+}
+
+.mainImg2 {
+    background-image: url(../../../images/deportes/pelotas/pelotas1.png);
+    background-size: 95%;
+}
+
+#input2-1:checked ~ .cont1 .label2-1 .estrella2-1,
+.cont1:hover .estrella2-1{
+    background-image: url(../../../images/estrella.png);
+}
+#input2-2:checked ~ .cont2 .label2-2 .estrella2-2,
+#input2-2:checked ~ .cont1 .label2-1 .estrella2-1,
+.cont2:hover ~ .cont1 .label2-1 .estrella2-1,
+.cont2:hover .estrella2-2{
+    background-image: url(../../../images/estrella.png);
+}
+#input2-3:checked ~ .cont3 .label2-3 .estrella2-3,
+#input2-3:checked ~ .cont2 .label2-2 .estrella2-2,
+#input2-3:checked ~ .cont1 .label2-1 .estrella2-1,
+.cont3:hover ~ .cont2 .label2-2 .estrella2-2,
+.cont3:hover ~ .cont1 .label2-1 .estrella2-1,
+.cont3:hover .estrella2-3{
+    background-image: url(../../../images/estrella.png);
+}
+#input2-4:checked ~ .cont4 .label2-4 .estrella2-4,
+#input2-4:checked ~ .cont3 .label2-3 .estrella2-3,
+#input2-4:checked ~ .cont2 .label2-2 .estrella2-2,
+#input2-4:checked ~ .cont1 .label2-1 .estrella2-1,
+.cont4:hover ~ .cont3 .label2-3 .estrella2-3,
+.cont4:hover ~ .cont2 .label2-2 .estrella2-2,
+.cont4:hover ~ .cont1 .label2-1 .estrella2-1,
+.cont4:hover .estrella2-4{
+    background-image: url(../../../images/estrella.png);
+}
+#input2-5:checked ~ .cont5 .label2-5 .estrella2-5,
+#input2-5:checked ~ .cont4 .label2-4 .estrella2-4,
+#input2-5:checked ~ .cont3 .label2-3 .estrella2-3,
+#input2-5:checked ~ .cont2 .label2-2 .estrella2-2,
+#input2-5:checked ~ .cont1 .label2-1 .estrella2-1,
+.cont5:hover ~ .cont4 .label2-4 .estrella2-4,
+.cont5:hover ~ .cont3 .label2-3 .estrella2-3,
+.cont5:hover ~ .cont2 .label2-2 .estrella2-2,
+.cont5:hover ~ .cont1 .label2-1 .estrella2-1,
+.cont5:hover .estrella2-5{
+    background-image: url(../../../images/estrella.png);
+}
+#check__buy2:checked ~ .fondo2{
+    opacity: 1;
+    visibility: visible;
+}
+.content__imagen2{
+    background-image: url(../../../images/deportes/pelotas/pelotas1.png);
+}
+
+#input2_1:checked ~ .cont1 .label2_1 .estrella2_1,
+.cont1:hover .estrella2_1{
+    background-image: url(../../../images/estrella.png);
+}
+#input2_2:checked ~ .cont2 .label2_2 .estrella2_2,
+#input2_2:checked ~ .cont1 .label2_1 .estrella2_1,
+.cont2:hover ~ .cont1 .label2_1 .estrella2_1,
+.cont2:hover .estrella2_2{
+    background-image: url(../../../images/estrella.png);
+}
+#input2_3:checked ~ .cont3 .label2_3 .estrella2_3,
+#input2_3:checked ~ .cont2 .label2_2 .estrella2_2,
+#input2_3:checked ~ .cont1 .label2_1 .estrella2_1,
+.cont3:hover ~ .cont2 .label2_2 .estrella2_2,
+.cont3:hover ~ .cont1 .label2_1 .estrella2_1,
+.cont3:hover .estrella2_3{
+    background-image: url(../../../images/estrella.png);
+}
+#input2_4:checked ~ .cont4 .label2_4 .estrella2_4,
+#input2_4:checked ~ .cont3 .label2_3 .estrella2_3,
+#input2_4:checked ~ .cont2 .label2_2 .estrella2_2,
+#input2_4:checked ~ .cont1 .label2_1 .estrella2_1,
+.cont4:hover ~ .cont3 .label2_3 .estrella2_3,
+.cont4:hover ~ .cont2 .label2_2 .estrella2_2,
+.cont4:hover ~ .cont1 .label2_1 .estrella2_1,
+.cont4:hover .estrella2_4{
+    background-image: url(../../../images/estrella.png);
+}
+#input2_5:checked ~ .cont5 .label2_5 .estrella2_5,
+#input2_5:checked ~ .cont4 .label2_4 .estrella2_4,
+#input2_5:checked ~ .cont3 .label2_3 .estrella2_3,
+#input2_5:checked ~ .cont2 .label2_2 .estrella2_2,
+#input2_5:checked ~ .cont1 .label2_1 .estrella2_1,
+.cont5:hover ~ .cont4 .label2_4 .estrella2_4,
+.cont5:hover ~ .cont3 .label2_3 .estrella2_3,
+.cont5:hover ~ .cont2 .label2_2 .estrella2_2,
+.cont5:hover ~ .cont1 .label2_1 .estrella2_1,
+.cont5:hover .estrella2_5{
+    background-image: url(../../../images/estrella.png);
+}
+/*--------------------SECTION   2--------------------*/
+
+
+/*--------------------SECTION   3--------------------*/
+
+.foto3_2:hover ~ .mainImg3{
+    background-image: url(../../../images/deportes/mesa/mesa2.png);
+}
+.foto3_3:hover ~ .mainImg3{
+    background-image: url(../../../images/deportes/mesa/mesa3.png);
+}
+
+.mainImg3 {
+    background-image: url(../../../images/deportes/mesa/mesa1.png);
+}
+
+#input3-1:checked ~ .cont1 .label3-1 .estrella3-1,
+.cont1:hover .estrella3-1{
+    background-image: url(../../../images/estrella.png);
+}
+#input3-2:checked ~ .cont2 .label3-2 .estrella3-2,
+#input3-2:checked ~ .cont1 .label3-1 .estrella3-1,
+.cont2:hover ~ .cont1 .label3-1 .estrella3-1,
+.cont2:hover .estrella3-2{
+    background-image: url(../../../images/estrella.png);
+}
+#input3-3:checked ~ .cont3 .label3-3 .estrella3-3,
+#input3-3:checked ~ .cont2 .label3-2 .estrella3-2,
+#input3-3:checked ~ .cont1 .label3-1 .estrella3-1,
+.cont3:hover ~ .cont2 .label3-2 .estrella3-2,
+.cont3:hover ~ .cont1 .label3-1 .estrella3-1,
+.cont3:hover .estrella3-3{
+    background-image: url(../../../images/estrella.png);
+}
+#input3-4:checked ~ .cont4 .label3-4 .estrella3-4,
+#input3-4:checked ~ .cont3 .label3-3 .estrella3-3,
+#input3-4:checked ~ .cont2 .label3-2 .estrella3-2,
+#input3-4:checked ~ .cont1 .label3-1 .estrella3-1,
+.cont4:hover ~ .cont3 .label3-3 .estrella3-3,
+.cont4:hover ~ .cont2 .label3-2 .estrella3-2,
+.cont4:hover ~ .cont1 .label3-1 .estrella3-1,
+.cont4:hover .estrella3-4{
+    background-image: url(../../../images/estrella.png);
+}
+#input3-5:checked ~ .cont5 .label3-5 .estrella3-5,
+#input3-5:checked ~ .cont4 .label3-4 .estrella3-4,
+#input3-5:checked ~ .cont3 .label3-3 .estrella3-3,
+#input3-5:checked ~ .cont2 .label3-2 .estrella3-2,
+#input3-5:checked ~ .cont1 .label3-1 .estrella3-1,
+.cont5:hover ~ .cont4 .label3-4 .estrella3-4,
+.cont5:hover ~ .cont3 .label3-3 .estrella3-3,
+.cont5:hover ~ .cont2 .label3-2 .estrella3-2,
+.cont5:hover ~ .cont1 .label3-1 .estrella3-1,
+.cont5:hover .estrella3-5{
+    background-image: url(../../../images/estrella.png);
+}
+#check__buy3:checked ~ .fondo3{
+    opacity: 1;
+    visibility: visible;
+}
+.content__imagen3{
+    background-image: url(../../../images/deportes/mesa/mesa1.png);
+}
+
+#input3_1:checked ~ .cont1 .label3_1 .estrella3_1,
+.cont1:hover .estrella3_1{
+    background-image: url(../../../images/estrella.png);
+}
+#input3_2:checked ~ .cont2 .label3_2 .estrella3_2,
+#input3_2:checked ~ .cont1 .label3_1 .estrella3_1,
+.cont2:hover ~ .cont1 .label3_1 .estrella3_1,
+.cont2:hover .estrella3_2{
+    background-image: url(../../../images/estrella.png);
+}
+#input3_3:checked ~ .cont3 .label3_3 .estrella3_3,
+#input3_3:checked ~ .cont2 .label3_2 .estrella3_2,
+#input3_3:checked ~ .cont1 .label3_1 .estrella3_1,
+.cont3:hover ~ .cont2 .label3_2 .estrella3_2,
+.cont3:hover ~ .cont1 .label3_1 .estrella3_1,
+.cont3:hover .estrella3_3{
+    background-image: url(../../../images/estrella.png);
+}
+#input3_4:checked ~ .cont4 .label3_4 .estrella3_4,
+#input3_4:checked ~ .cont3 .label3_3 .estrella3_3,
+#input3_4:checked ~ .cont2 .label3_2 .estrella3_2,
+#input3_4:checked ~ .cont1 .label3_1 .estrella3_1,
+.cont4:hover ~ .cont3 .label3_3 .estrella3_3,
+.cont4:hover ~ .cont2 .label3_2 .estrella3_2,
+.cont4:hover ~ .cont1 .label3_1 .estrella3_1,
+.cont4:hover .estrella3_4{
+    background-image: url(../../../images/estrella.png);
+}
+#input3_5:checked ~ .cont5 .label3_5 .estrella3_5,
+#input3_5:checked ~ .cont4 .label3_4 .estrella3_4,
+#input3_5:checked ~ .cont3 .label3_3 .estrella3_3,
+#input3_5:checked ~ .cont2 .label3_2 .estrella3_2,
+#input3_5:checked ~ .cont1 .label3_1 .estrella3_1,
+.cont5:hover ~ .cont4 .label3_4 .estrella3_4,
+.cont5:hover ~ .cont3 .label3_3 .estrella3_3,
+.cont5:hover ~ .cont2 .label3_2 .estrella3_2,
+.cont5:hover ~ .cont1 .label3_1 .estrella3_1,
+.cont5:hover .estrella3_5{
+    background-image: url(../../../images/estrella.png);
+}
+/*--------------------SECTION   3--------------------*/
+
+
+/*--------------------SECTION   4--------------------*/
+
+.foto4_2:hover ~ .mainImg4{
+    background-image: url(../../../images/deportes/mancuernas/mancuerna2.png);
+}
+.foto4_3:hover ~ .mainImg4{
+    background-image: url(../../../images/deportes/mancuernas/mancuerna3.png);
+}
+
+.mainImg4 {
+    background-image: url(../../../images/deportes/mancuernas/mancuerna1.png);
+    background-size: 95%;
+}
+
+#input4-1:checked ~ .cont1 .label4-1 .estrella4-1,
+.cont1:hover .estrella4-1{
+    background-image: url(../../../images/estrella.png);
+}
+#input4-2:checked ~ .cont2 .label4-2 .estrella4-2,
+#input4-2:checked ~ .cont1 .label4-1 .estrella4-1,
+.cont2:hover ~ .cont1 .label4-1 .estrella4-1,
+.cont2:hover .estrella4-2{
+    background-image: url(../../../images/estrella.png);
+}
+#input4-3:checked ~ .cont3 .label4-3 .estrella4-3,
+#input4-3:checked ~ .cont2 .label4-2 .estrella4-2,
+#input4-3:checked ~ .cont1 .label4-1 .estrella4-1,
+.cont3:hover ~ .cont2 .label4-2 .estrella4-2,
+.cont3:hover ~ .cont1 .label4-1 .estrella4-1,
+.cont3:hover .estrella4-3{
+    background-image: url(../../../images/estrella.png);
+}
+#input4-4:checked ~ .cont4 .label4-4 .estrella4-4,
+#input4-4:checked ~ .cont3 .label4-3 .estrella4-3,
+#input4-4:checked ~ .cont2 .label4-2 .estrella4-2,
+#input4-4:checked ~ .cont1 .label4-1 .estrella4-1,
+.cont4:hover ~ .cont3 .label4-3 .estrella4-3,
+.cont4:hover ~ .cont2 .label4-2 .estrella4-2,
+.cont4:hover ~ .cont1 .label4-1 .estrella4-1,
+.cont4:hover .estrella4-4{
+    background-image: url(../../../images/estrella.png);
+}
+#input4-5:checked ~ .cont5 .label4-5 .estrella4-5,
+#input4-5:checked ~ .cont4 .label4-4 .estrella4-4,
+#input4-5:checked ~ .cont3 .label4-3 .estrella4-3,
+#input4-5:checked ~ .cont2 .label4-2 .estrella4-2,
+#input4-5:checked ~ .cont1 .label4-1 .estrella4-1,
+.cont5:hover ~ .cont4 .label4-4 .estrella4-4,
+.cont5:hover ~ .cont3 .label4-3 .estrella4-3,
+.cont5:hover ~ .cont2 .label4-2 .estrella4-2,
+.cont5:hover ~ .cont1 .label4-1 .estrella4-1,
+.cont5:hover .estrella4-5{
+    background-image: url(../../../images/estrella.png);
+}
+#check__buy4:checked ~ .fondo4{
+    opacity: 1;
+    visibility: visible;
+}
+.content__imagen4{
+    background-image: url(../../../images/deportes/mancuernas/mancuerna1.png);
+}
+
+#input4_1:checked ~ .cont1 .label4_1 .estrella4_1,
+.cont1:hover .estrella4_1{
+    background-image: url(../../../images/estrella.png);
+}
+#input4_2:checked ~ .cont2 .label4_2 .estrella4_2,
+#input4_2:checked ~ .cont1 .label4_1 .estrella4_1,
+.cont2:hover ~ .cont1 .label4_1 .estrella4_1,
+.cont2:hover .estrella4_2{
+    background-image: url(../../../images/estrella.png);
+}
+#input4_3:checked ~ .cont3 .label4_3 .estrella4_3,
+#input4_3:checked ~ .cont2 .label4_2 .estrella4_2,
+#input4_3:checked ~ .cont1 .label4_1 .estrella4_1,
+.cont3:hover ~ .cont2 .label4_2 .estrella4_2,
+.cont3:hover ~ .cont1 .label4_1 .estrella4_1,
+.cont3:hover .estrella4_3{
+    background-image: url(../../../images/estrella.png);
+}
+#input4_4:checked ~ .cont4 .label4_4 .estrella4_4,
+#input4_4:checked ~ .cont3 .label4_3 .estrella4_3,
+#input4_4:checked ~ .cont2 .label4_2 .estrella4_2,
+#input4_4:checked ~ .cont1 .label4_1 .estrella4_1,
+.cont4:hover ~ .cont3 .label4_3 .estrella4_3,
+.cont4:hover ~ .cont2 .label4_2 .estrella4_2,
+.cont4:hover ~ .cont1 .label4_1 .estrella4_1,
+.cont4:hover .estrella4_4{
+    background-image: url(../../../images/estrella.png);
+}
+#input4_5:checked ~ .cont5 .label4_5 .estrella4_5,
+#input4_5:checked ~ .cont4 .label4_4 .estrella4_4,
+#input4_5:checked ~ .cont3 .label4_3 .estrella4_3,
+#input4_5:checked ~ .cont2 .label4_2 .estrella4_2,
+#input4_5:checked ~ .cont1 .label4_1 .estrella4_1,
+.cont5:hover ~ .cont4 .label4_4 .estrella4_4,
+.cont5:hover ~ .cont3 .label4_3 .estrella4_3,
+.cont5:hover ~ .cont2 .label4_2 .estrella4_2,
+.cont5:hover ~ .cont1 .label4_1 .estrella4_1,
+.cont5:hover .estrella4_5{
+    background-image: url(../../../images/estrella.png);
+}
+/*--------------------SECTION   4--------------------*/
+
+
+/*-----------------------FOOTER-----------------------*/
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+}
+.footerTitle {
+    font-size: 18px;
+}
+.menuLinks{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.menuLinks a:hover{
+    text-decoration: underline;
+}
+.icon {
+    width: 30px;
+}
+
+/*-----------------------FOOTER-----------------------*/
