@@ -9,7 +9,9 @@ a {
     text-decoration: none;
 }
 body {
+    width: 100%;
     margin: 0;
+    overflow-x: hidden;
     background-color: #365486;
 }
 input {
@@ -26,11 +28,12 @@ header{
     background-color: #363062;
 }
 .header__section {
-    margin: 0 auto;
     display: flex;
-    gap: 20vw;
+    justify-content: center;
+    align-items: center;
 }
 .logo {
+    margin-right: 25vw;
     display: flex;
 }
 .p1 {
@@ -47,7 +50,23 @@ header{
     display: flex;
     align-items: center;
 }
+i {
+    cursor: pointer;
+}
+label {
+    display: none;
+}
+#hamburguer{
+    font-size: 30px;
+    height: 30px;
+}
+#x {
+    font-size: 40px;
+    height: 30px;
+}
+
 .nav__links {
+    height: 100%;
     display: flex;
     align-items: center;
 }
@@ -62,10 +81,14 @@ header{
 .nav__link:hover{
     box-shadow: 0 1px 8px 0px black;
 }
-.item1 {
+.item {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+.item2 {
+    width: 144.825px;
+}
+.nav__link2 {
+    width: 129px;
 }
 .menuCatalogo {
     position: absolute;
@@ -153,7 +176,7 @@ main {
     position: absolute;
     top: 473px;
     margin: 20px 50px;
-    width: 36%;
+    width: 546.9px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -180,8 +203,8 @@ main {
 
 .section2 {
     width: 1367.28px;
-    margin-top: 4vw;
-    margin-bottom: 6vw;
+    margin-top: 61.44px;
+    margin-bottom: 92.16px;
     display: flex;
     justify-content: center;
 }
@@ -210,6 +233,7 @@ main {
     z-index: 1;
 }
 .miniBoton {
+    width: 112.488px;
     position: absolute;
     top: 787px;
     transition: 0.15s ease;
@@ -270,6 +294,83 @@ footer {
     text-decoration: underline;
 }
 .icon {
+    margin-right: 5px;
     width: 30px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+.icon:hover{
+    width: 35px;
 }
 /*    FOOTER    */
+
+@media screen and (max-width: 800px) {
+    /*    HEAD    */
+    .header__section {
+        width: 95%;
+        justify-content: space-between;
+    }
+    label {
+        display: block;
+    }
+    #x{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        transition: 0.15s;
+    }
+    #hamburguer{
+        transition: 0.15s;
+    }
+    #x:hover {
+        font-size: 41px;
+    }
+    #hamburguer:hover{
+        font-size: 31px;
+    }
+
+    #checkMenu:checked ~ .nav{
+        top: 20px;
+        right: 20px;
+    }
+    .logo{
+        margin-right: 0;
+    }
+    .nav {
+        position: absolute;
+        top: -250px;
+        right: 20px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #0F1035;
+        z-index: 2;
+        border-radius: 10px;
+        transition: 0.15s;
+    }
+    .nav__links{
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .nav__link:hover{
+        background-color: #363062;
+    }
+    .menuCatalogo{
+        left: -112px;
+        visibility: hidden;
+    }
+    .menuCatalogo:hover, .nav__link1:hover ~ .menuCatalogo{
+        visibility: visible;
+    }
+    /*    HEAD    */
+    .section1 {
+        margin: 10vw 0 7vw;
+        width: 80vw;
+        height: 49vw;
+    }
+
+    
+}

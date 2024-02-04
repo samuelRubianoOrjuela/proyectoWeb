@@ -13,9 +13,10 @@
             <div class="logo">
                 <p class="p1">s_R</p><p class="p2"><em>SHOP</em></p>
             </div>
+            <input type="checkbox" id="checkMenu">
             <nav class="nav">
                 <div class="nav__links">
-                    <div class="item1">
+                    <div class="item item1">
                         <a class="nav__link nav__link1">Catalogo</a>
                         <div class="menuCatalogo">
                             <a href="./categorias/tecnologia/tecnologiaIndex.html">Tecnologia</a>
@@ -25,15 +26,21 @@
                             <a href="./categorias/zapatos/zapatosIndex.html">Zapatos</a>
                         </div>
                     </div>
-                    <div class="item2">
-                        <a href="" class="nav__link nav__link2">Quienes somos</a>
+                    <div class="item item2">
+                        <a href="https://github.com/samuelRubianoOrjuela" target="_blank" class="nav__link nav__link2">Quienes somos</a>
                     </div>
-                    <div class="item3">
+                    <div class="item item3">
                         <a href="#footer" class="nav__link nav__link3">Contactenos</a>    
                     </div>
-                </div>        
+                </div>
+                <label for="checkMenu">
+                    <i class='bx bx-x' id="x"></i>        
+                </label>
+            </nav>
+            <label for="checkMenu">
+                <i class='bx bx-menu' id="hamburguer"></i>        
+            </label>
         </section>
-        </nav>
     </header>
     <main>
         <section class="section1">
@@ -62,16 +69,16 @@
         </section>
     </main>
     <hr>
-    <footer>
-        <div class="item item1">
+    <footer id="footer">
+        <div class="item_ item_1">
             <p class="footerTitle">Menu Links</p>
             <div class="menuLinks">
                 <a href="">Catalogo</a>
-                <a href="">Quienes somos</a>
-                <a href="">Contactenos</a>
+                <a href="https://github.com/samuelRubianoOrjuela">Quienes somos</a>
+                <a href="#footer">Contactenos</a>
             </div>
         </div>
-        <div class="item item2">
+        <div class="item_ item_2">
             <p class="footerTitle">Nuestros servicios</p>
             <div>
                 <p>Productos</p>
@@ -80,7 +87,7 @@
                 <p>Ayuda</p>
             </div>
         </div>
-        <div class="item item3">
+        <div class="item_ item_3">
             <p class="footerTitle">Informacion</p>
             <div>
                 <p>Quienes somos</p>
@@ -89,7 +96,7 @@
                 <p>Terminos y condiciones</p>
             </div>
         </div>
-        <div class="item item4">
+        <div class="item_ item_4">
             <p class="footerTitle">Contactenos</p>
             <div class="icons">
                 <img src="./images/boxIcons/facebook.png" alt="facebook" class="icon icon1">
