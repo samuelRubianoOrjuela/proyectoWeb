@@ -785,3 +785,208 @@ Las demás estructuras de los documentos de este proyecto son iguales por lo cua
     }
     ```
     -------
+- Agregamos márgenes a los elementos que se encuentran debajo de las estrellas y seleccionamos el negro como el color de la fuente
+- Seleccionamos el ancho que va a tener el botón, agregamos márgenes tanto externas como internas, redondeamos los bordes seleccionamos un color de fondo
+- Cuando el cursor esté sobre el botón el color cambiará por uno más oscuro
+    ```css
+    .section__text h2 {
+        margin: 20px 40px 15px;
+        color: black;
+    }
+    .info {
+        margin: 0 30px;
+        margin-bottom: 0;
+        color: black;
+    }
+
+    .buy {
+        width: 77px;
+        margin: 16px 34px;
+        padding: 5px;
+        border-radius: 3px;
+        background-color: #71A95A;
+        cursor: pointer;
+    }
+    .buy:hover {
+        background-color: #709053;
+    }
+    ```
+-------
+- Ahora crearemos un elemento que saldrá en la pantalla cuando el botón de comprar sea activado
+- El contenedor principal se llamará fondo producto, acomodamos el elemento de tal forma que ocupe toda la pantalla y escogemos un color que opaque los elementos que queden detrás
+- Ubicamos el ícono el cual cerrará esta ventana y seleccionamos su tamaño
+- Le damos algo contenedor de la imagen alto y ancho redondeamos los bordes y acomodamos el fondo
+- Le damos un ancho al contenedor del texto
+- Agregamos márgenes al título de esta ventana y le brindamos un tamaño
+- Agregamos márgenes tanto externas como internas al botón de compra, redondeamos sus bordes escogemos un color de fondo y lo ubicamos
+- Agregamos una margen para el contenido del texto
+    ```css
+    .fondoProducto{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 100;
+        pointer-events: all;
+        transition: 0.1s linear;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .producto {
+        position: fixed;
+        top: 2%;
+        right: 30%;
+        width: 40%;
+        height: 700px;
+        background-color: #363062;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .bx{
+        position: absolute;
+        font-size: 40px;
+        top: 1.5%;
+        right: 2%;
+        cursor: pointer;
+    }
+    .content__imagen {
+        margin-top: 60px;
+        width: 83%;
+        height: 47%;
+        border-radius: 10px;
+        background-size: 62%;
+        background-repeat: no-repeat;
+        background-color: white;
+        background-position: center;
+    }
+    .content__texto{
+        width: 83%;
+    }
+    .content__texto h1{
+        margin: 15px;
+        margin-bottom: 10px;
+        font-size: 40px;
+        color: white;
+    }
+    .content__texto h2 {
+        margin: 15px 15px;
+        color: white;
+    }
+    .buy_ {
+        position: absolute;
+        margin: 16px 34px;
+        padding: 5px;
+        width: 115px;
+        font-size: 24px;
+        top: 407px;
+        right: 60px;
+        border-radius: 3px;
+        background-color: #71A95A;
+        cursor: pointer;
+    }
+    .content__texto p {
+        margin: 6px 12px;
+    }
+    ```
+-------
+- De nuevo organizamos las estrellas para que estas también se apliquen en nuestra nueva ventana
+    ```css
+    .estrellas_ {
+        margin: 0;
+        width: 39%;
+        height: 38px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    .estrella_ {
+        margin: 0 5px;
+        width: 40px;
+        height: 100%;
+        background-image: url(../../../images/estrellaBorde.png);
+        background-size: 100%;
+        cursor: pointer;
+    }
+    #input_1:checked ~ .cont1 .label_1 .estrella_1,
+    .cont1:hover .estrella_1{
+        background-image: url(../../../images/estrella.png);
+    }
+    #input_2:checked ~ .cont2 .label_2 .estrella_2,
+    #input_2:checked ~ .cont1 .label_1 .estrella_1,
+    .cont2:hover ~ .cont1 .label_1 .estrella_1,
+    .cont2:hover .estrella_2{
+        background-image: url(../../../images/estrella.png);
+    }
+    #input_3:checked ~ .cont3 .label_3 .estrella_3,
+    #input_3:checked ~ .cont2 .label_2 .estrella_2,
+    #input_3:checked ~ .cont1 .label_1 .estrella_1,
+    .cont3:hover ~ .cont2 .label_2 .estrella_2,
+    .cont3:hover ~ .cont1 .label_1 .estrella_1,
+    .cont3:hover .estrella_3{
+        background-image: url(../../../images/estrella.png);
+    }
+    #input_4:checked ~ .cont4 .label_4 .estrella_4,
+    #input_4:checked ~ .cont3 .label_3 .estrella_3,
+    #input_4:checked ~ .cont2 .label_2 .estrella_2,
+    #input_4:checked ~ .cont1 .label_1 .estrella_1,
+    .cont4:hover ~ .cont3 .label_3 .estrella_3,
+    .cont4:hover ~ .cont2 .label_2 .estrella_2,
+    .cont4:hover ~ .cont1 .label_1 .estrella_1,
+    .cont4:hover .estrella_4{
+        background-image: url(../../../images/estrella.png);
+    }
+    #input_5:checked ~ .cont5 .label_5 .estrella_5,
+    #input_5:checked ~ .cont4 .label_4 .estrella_4,
+    #input_5:checked ~ .cont3 .label_3 .estrella_3,
+    #input_5:checked ~ .cont2 .label_2 .estrella_2,
+    #input_5:checked ~ .cont1 .label_1 .estrella_1,
+    .cont5:hover ~ .cont4 .label_4 .estrella_4,
+    .cont5:hover ~ .cont3 .label_3 .estrella_3,
+    .cont5:hover ~ .cont2 .label_2 .estrella_2,
+    .cont5:hover ~ .cont1 .label_1 .estrella_1,
+    .cont5:hover .estrella_5{
+        background-image: url(../../../images/estrella.png);
+    }
+    ```
+-------
+## Estilo de seccion específica
+- Ahora agregaremos los estilos específicos de cada sección
+- Escogemos las fotos las cual es aparecerán como fondo de la imagen principal cuando el cursor esté sobre ellas
+- Escogeremos la imagen principal de cada sección y le brindaremos un tamaño específico
+- Especificaremos cuál será el botón que activará la nueva ventana de dicha sección
+- Agregamos la imagen que tendrá de fondo la nueva ventana
+- Organizamos la posición del botón de la nueva ventana
+    ```css
+    .foto1_2:hover ~ .mainImg1{
+        background-image: url(../../../images/tecnologia/pc/pc2.png);
+
+    }
+    .foto1_3:hover ~ .mainImg1{
+        background-image: url(../../../images/tecnologia/pc/pc3.png);
+    }
+
+    .mainImg1 {
+        background-image: url(../../../images/tecnologia/pc/pc1.png);
+        background-size: 95%;
+    }
+    #check__buy1:checked ~ .fondo1{
+        opacity: 1;
+        visibility: visible;
+    }
+    .content__imagen1{
+        background-image: url(../../../images/tecnologia/pc/pc1.png);
+    }
+    .buy_1 {
+        position: absolute;
+        top: 460px;
+        right: 90px;
+    }
+    ```
+-------
+Estos últimos fueron los estilos que se le deberán aplicar a cada una de las secciones especificando la imagen que se utilizará y especificando los tamaños. Todas las secciones incluyendo las de las otras categorías son basadas en esta plantilla, solo se cambiarán estilos específicos.
